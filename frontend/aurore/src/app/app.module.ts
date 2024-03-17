@@ -4,7 +4,7 @@ import { CommonModule} from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { BookingMngtComponent } from './view/booking-mngt/booking-mngt.component';
 import { RoutingModule } from './app.routing.module';// Import RouterModule
@@ -76,7 +76,7 @@ import { EmailComponent} from './components/email/email.component'
     MatToolbarModule,
     FormsModule,
     ReactiveFormsModule,
-    // FontAwesomeModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
