@@ -21,6 +21,8 @@ from src.db import firebase_config
 from pydantic import SecretStr
 from typing import Optional
 
+import src.api.get_accommodation as get_accommodation
+import src.api.get_reservations as get_reservations
 
 app = FastAPI()
 
@@ -35,6 +37,7 @@ app.add_middleware(
 
 storage = firebase_config.firebase.storage()
 app.logged_user = ""
+
 
 @app.get("/")
 def read_root():
@@ -79,6 +82,10 @@ def logout_user():
         app.logged_user = ""
         return "Usuário deslogado com sucesso!"
     raise HTTPException(status_code=400, detail="Falha ao realizar logout: Usuário não estava logado.")
+
+@app.get("/users/logged")
+def logged():
+     return users.get_username_from_email(app.logged_user)
 
 @app.post("/accommodation/create")
 def create_accommodation(
@@ -207,3 +214,21 @@ def delete_payment_method(
 @app.post("/email_trigger")
 def send_email():
     return send_email
+
+    
+@app.get("/accommodations/{id}/list")
+def get_accommodations_id(id:str):
+    return get_accommodation.get_accommodations(id)
+
+@app.get("/reservations/{id}/list")
+def get_reservations_id(id:str):
+    return get_reservations.get_reservations(id)
+
+
+@app.get("/accommodation/{accommodation_id}")
+def get_accommodation_by_id(
+    accommodation_id: str
+): 
+    return accommodations.get_accommodation_by_id(
+        accommodation_id
+    )

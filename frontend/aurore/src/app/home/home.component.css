@@ -11,12 +11,15 @@
 
 .heading {
   margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Petrona';
 }
 
 .accommodations-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 13vh;
 }
 
 .accommodation {
