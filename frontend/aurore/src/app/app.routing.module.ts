@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { RatingComponent } from './components/rating/rating.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { PaymentComponent } from './components/pay/payment/payment.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/search', pathMatch: 'full' },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'historic/rating', component:  RatingComponent },
   { path: 'home', component: HomeComponent },
   { path: 'users/create', component: RegisterComponent, title: 'Register'},
-  { path: 'users/login', component: LoginComponent, title: 'Login'}
+  { path: 'users/login', component: LoginComponent, title: 'Login'},
+  { path: 'payment', component: PaymentComponent }
 ];
 
 @NgModule({
