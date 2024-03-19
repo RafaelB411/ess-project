@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { PaymentMethodComponent } from '../payment-method/payment-method.component';
 import { PaymentMethod } from '../payment-method/payment-method';
 import { PaymentRegisterComponent } from '../payment-register/payment-register.component';
+import { HeaderComumComponent } from '../../headers/header-comum/header-comum.component';
 
 @Component({
   selector: 'app-payment',

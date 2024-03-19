@@ -217,3 +217,23 @@ def delete_payment_method(username, method):
     except Exception as ex:
         raise HTTPException(status_code=500, detail=str(ex))
     
+def get_payment_methods(username):
+    try:
+        if not validate_user_payment_register(username):
+            raise HTTPException(status_code=404, detail="User not found!")
+
+        result = []
+        cnt = firebase_config.db.child("payment").child(username).child("cnt").get().val()
+
+        for i in range(cnt):
+            method = firebase_config.db.child("payment").child(username).child("method"+str(i+1)).get().val() 
+            result.append(method)
+
+        return HTTPException(status_code=200, detail=result)
+        
+    except HTTPException as hex:
+        raise hex
+        
+    except Exception as ex:
+        raise HTTPException(status_code=500, detail=str(ex))
+    

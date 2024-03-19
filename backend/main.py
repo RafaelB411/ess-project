@@ -211,6 +211,12 @@ def delete_payment_method(
     ):
     return payment.delete_payment_method(id, method)
 
+@app.get("/payment/{id}/get")
+def get_payment_methods(
+    id: str
+    ):
+    return payment.get_payment_methods(id) 
+
 @app.post("/email_trigger")
 def send_email():
     return send_email

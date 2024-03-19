@@ -1,25 +1,19 @@
-.listing {
-    align-items: center;
-  }
-  .listing-heading {
-    color: #38354e;
-    padding: 10px 20px 0 20px;
-  }
-  .listing-photo {
-    height: 150px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 30px 30px 0 0;
-  }
-  .listing-method {
+.payment-method {
     border-radius: 30px;
     height: 65px;
     width: 500px;
     padding: 10px 20px 20px 20px;
-    top: 50%;
     position: relative;
     margin-bottom: 10px;
     background: #aba194;
+    display: flex;
+    flex-direction: column;
+  }
+  .info{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .button-container {
@@ -38,16 +32,6 @@
     margin-right: 5px;
   }
   .button-container button:hover {
-    background-color: #38354e;
-  }
- 
-  section.listing a {
-    padding-left: 20px;
-    height: 50%;
-    text-decoration: none;
+    background-color: #d8ddde;
     color: #38354e;
-  }
-  section.listing a::after {
-    content: "\203A";
-    margin-left: 5px;
   }

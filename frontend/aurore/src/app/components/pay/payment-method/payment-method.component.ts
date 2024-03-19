@@ -11,7 +11,9 @@ import { PaymentEditComponent } from '../payment-edit/payment-edit.component';
 export class PaymentMethodComponent{
   method_type: string | undefined;
   method_id: string | undefined;
-  photo: string | undefined;
 
   @Input() paymentMethod!: PaymentMethod;
+  @Input() rota: any;
+  @Input() rotaDel: any;
+  rotaEdit: any;
 }
