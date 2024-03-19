@@ -1,63 +1,55 @@
 .top-bar {
-    background-color: #8c271e;
-    color: #d8ddde;
-    padding: 20px;
-    text-align: center;
+  background-color: #8c271e;
+  color: #d8ddde;
+  padding: 20px;
+  text-align: center;
+}
+
+.results {
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    column-count: 1;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    margin-left: 22%;
+    justify-content: center;
   }
   
-  .content {
-    padding: 20px;
-  }
-  
-  .heading {
-    margin-bottom: 20px;
-  }
-  
-  .accommodations-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .accommodation {
-    width: calc(30% - 20px);
-    margin-bottom: 20px;
+  input[type="text"] {
+    border: solid 1px #38354e;
     padding: 10px;
-    border: 1px solid #d8ddde;
-    box-sizing: border-box;
-    flex-grow: 1;
+    border-radius: 8px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 30%;
   }
   
-  .accommodation img {
-    width: 100%;
-    height: auto;
+  button {
+    margin-top: 25px;
+    margin-left: 47%;
+    padding: 10px;
+    border: solid 1px #38354e;
+    background: #8c271e;
+    color: #d8ddde;
+    border-radius: 10px;
     cursor: pointer;
   }
-  
-  .accommodation h3 {
-    color: #38354e;
-    margin-top: 10px;
+  button:hover {
+    background-color: #38354e;
   }
-  
-  .accommodation p {
-    color: #38354e;
-    margin-bottom: 5px;
-  }
-  
-  .heading {
-    /* make this alone in the line */
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .accommodations-container {
-      flex-direction: column;
-      align-items: center;
+
+  @media (min-width: 500px) and (max-width: 768px) {
+    .results {
+        grid-template-columns: repeat(2, 1fr);
     }
+    input[type="text"] {
+        width: 70%;
+    }   
+  }
   
-    .accommodation {
-      width: calc(100% - 20px);
-    }
+  @media (max-width: 499px) {
+    .results {
+        grid-template-columns: 1fr;
+    }    
   }

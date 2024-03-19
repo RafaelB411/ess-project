@@ -1,0 +1,28 @@
+<div>
+    <div class="container-mt-5">
+        <div class="card-header">
+            <a href="http://localhost:4200/"><img src="../../../assets/Aurore logo.png" class="logo"></a>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="type-field">
+                    <label for="type">Método:</label>
+                    <select id="type" name="type" class="form-control-type" [(ngModel)]="type" required>
+                        <option value="">Selecione</option>
+                        <option value="pix">Pix</option>
+                        <option value="boleto">Boleto</option>
+                        <option value="debito">Débito</option>
+                        <option value="credito">Crédito</option>
+                    </select>
+                </div>
+                <div class="code-field">
+                    <label>Código</label>
+                    <input type="text" [(ngModel)]="code" name="code" class="form-control-code">
+                </div>
+                <a href='payment/:user/'>
+                    <button type="button" class="btn-edit" onclick="edit(type, code)">Confirmar</button>
+                </a>
+            </form>
+        </div>
+    </div>
+</div>

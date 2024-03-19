@@ -1,1 +1,27 @@
-<p>payment-method works!</p>
+<div class="listing">
+    <div [ngSwitch]="paymentMethod.method_id">
+      <div class="listing-method" *ngSwitchCase="undefined">
+        <p style="font-family: Arial; font-size: 18px;">
+          <b>tipo:</b> {{ paymentMethod.method_type }}
+        </p>
+        <div class="button-container">
+          <a href='payment/:user/edit/'>
+            <button type="button">Editar</button>
+          </a>
+          <button>Excluir</button>
+        </div>
+      </div>
+      <div class="listing-method" *ngSwitchDefault="undefined">
+        <p style="font-family: Arial; font-size: 18px;">
+          <b>tipo:</b> {{ paymentMethod.method_type }} <br>
+          <b>codigo:</b> {{ paymentMethod.method_id }}
+        </p>
+        <div class="button-container">
+          <a href='payment/:user/edit'>
+            <button type="button">Editar</button>
+          </a>
+          <button>Excluir</button>
+        </div>
+      </div>
+    </div>
+</div>

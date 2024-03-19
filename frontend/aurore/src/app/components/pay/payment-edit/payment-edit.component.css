@@ -1,0 +1,204 @@
+.container-mt-5{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    background: #ABA194;
+}
+
+.card-header{
+    position: absolute;
+    width: 100vw;
+    height: 11.57vh;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.logo{
+    height: 11.57vh;
+}
+
+.card-body{
+    position: absolute;
+    width: 47.36vw;
+    height: 88.43vh;
+    left: 25vw;
+    top: 11.57vh;
+
+    background: #D9D9D9;
+    border-radius: 1.68vh;
+}
+
+.type-field{
+    position: absolute;
+    width: 10vw;
+    height: 2.85vh;
+    left: 5vw;
+    top: 2vh;
+
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
+    line-height: 2.85vh; 
+
+    color: rgba(56, 53, 78, 0.7); 
+}
+
+.form-control-type{
+    position: absolute;
+    width: 38vw;
+    height: 6vh;
+    left: 0vw;
+    top: 4vh;
+
+    background: #CFCBCA;
+    border-radius: 2.5vh;  
+    border:none; 
+
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
+    line-height: 2.85vh; 
+
+    color: rgba(56, 53, 78, 0.7); 
+}
+
+.code-field{
+    position: absolute;
+    width: 10vw;
+    height: 2.85vh;
+    left: 5vw;
+    top: 15vh;
+
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
+    line-height: 2.85vh; 
+
+    color: rgba(56, 53, 78, 0.7); 
+}
+
+.form-control-code{
+    position: absolute;
+    width: 38vw;
+    height: 6vh;
+    left: 0vw;
+    top: 4vh;
+
+    background: #CFCBCA;
+    border-radius: 2.5vh;  
+    border:none; 
+
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
+    line-height: 2.85vh; 
+
+    color: rgba(56, 53, 78, 0.7); 
+}
+
+.btn-edit{
+    position: absolute;
+    width: 24.5vw;
+    height: 5.87vh;
+    left: 12vw;
+    top: 70vh;
+
+    background: #8C271E;
+    border-radius: 2.5vh;
+    border:none;
+
+    text-align: center;
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vh;
+    line-height: 2.85vh;
+    color: #D8DDDE;
+    cursor: pointer;
+}
+
+.btn-edit:hover{
+    background: #501611;
+}
+
+.success-screen{
+    position: absolute;
+    width: 27.36vw;
+    height: 65vh;
+    left: 10.5vw;
+    top: 11.5vh;
+    display: none;
+
+    background: #ABA194;
+    border-radius: 1.68vh;
+}
+
+.success-text{
+    position: absolute;
+    width: 27.36vw;
+    height: 60vh;
+    top: 15vh;
+
+    text-align: center;
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vh;
+    line-height: 2.85vh;
+    color: #D8DDDE;
+}
+
+.btn-success-login{
+    position: absolute;
+    width: 18vw;
+    height: 7vh;
+    left: 5vw;
+    top: 25vh;
+
+    background: #8C271E;
+    border-radius: 2.5vh;
+    border:none;
+
+    text-align: center;
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 2.85vh;
+    color: #D8DDDE;
+}
+
+.btn-success-login:active{
+    background: #501611;
+}
+
+.btn-success-home{
+    position: absolute;
+    width: 18vw;
+    height: 7vh;
+    left: 5vw;
+    top: 37vh;
+
+    background: #8C271E;
+    border-radius: 2.5vh;
+    border:none;
+
+    text-align: center;
+    font-family: 'Petrona';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vh;
+    line-height: 2.85vh;
+    color: #D8DDDE;
+}
+
+.btn-success-home:active{
+    background: #501611;
+}

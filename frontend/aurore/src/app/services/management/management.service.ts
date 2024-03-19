@@ -144,5 +144,13 @@ export class ManegementService {
 
     return this.http.post<any>(url, null, { params });
   }
+
+  createPaymentMethod(data:any): Observable<any> {
+    const url = `http://localhost:8000/payment/${data.id}/add`
+    const params = new HttpParams()
+      .set('type', data.type)
+      .set('method_id', data.code)
+    return this.http.post<any>(url, null, { params });
+  } 
 }
 

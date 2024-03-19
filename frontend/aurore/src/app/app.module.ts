@@ -34,6 +34,10 @@ import { HeaderComumComponent } from './components/headers/header-comum/header-c
 import { ListCardComponent } from './components/list_card/list-card.component';
 import { CreateAccommodationsComponent } from './view/create-accommodations/create-accommodations.component';
 import { BookAccommodationsComponent } from './view/book-accommodations/book-accommodations.component';
+import { PaymentComponent } from './components/pay/payment/payment.component';
+import { PaymentMethodComponent } from './components/pay/payment-method/payment-method.component';
+import { PaymentRegisterComponent } from './components/pay/payment-register/payment-register.component';
+import { PaymentEditComponent } from './components/pay/payment-edit/payment-edit.component';
 
 import {HeaderHomeComponent } from './components/headers/header-home/header-home.component'
 import { EmailComponent} from './components/email/email.component'
@@ -61,7 +65,11 @@ import { EmailComponent} from './components/email/email.component'
     HeaderHomeComponent,
     CreateAccommodationsComponent,
     BookAccommodationsComponent,
-    EmailComponent
+    EmailComponent,
+    PaymentComponent,
+    PaymentMethodComponent,
+    PaymentRegisterComponent,
+    PaymentEditComponent
   ],
   imports: [
     StarsComponent,

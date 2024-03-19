@@ -1,1 +1,17 @@
-<p>payment works!</p>
+<div class="top-bar">
+    <h1>Aurore</h1>
+</div>
+<h3 style="text-align: center;">Formas de Pagamento</h3>
+  <div class="results">
+    <form>
+      <app-payment-method
+        *ngFor="let paymentMethod of paymentMethodList"
+        [paymentMethod]="paymentMethod">
+      </app-payment-method>    
+    </form>
+  </div>
+  <a href="payment/:user/create">
+    <div>
+      <button class="primary" type="button">Adicionar</button>
+    </div>
+  </a>

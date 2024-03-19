@@ -19,16 +19,20 @@ import { EmailComponent} from './components/email/email.component'
 // import { EditBookingComponent } from './view/edit-booking/edit-booking.component';
 // import { EditAccommodationComponent } from './view/edit-accommodation/edit-accommodation.component';
 import { PaymentComponent } from './components/pay/payment/payment.component';
+import { PaymentRegisterComponent } from './components/pay/payment-register/payment-register.component';
+import { PaymentEditComponent } from './components/pay/payment-edit/payment-edit.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/search', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'search', component: SearchPageComponent},
   { path: 'booking-mngt', component:  BookingMngtComponent },
   { path: 'historic/rating', component:  RatingComponent },
   { path: 'home', component: HomeComponent  },
   { path: 'users/create', component: RegisterComponent, title: 'Register'},
   { path: 'users/login', component: LoginComponent, title: 'Login'},
-  { path: 'payment', component: PaymentComponent },
+  { path: 'payment/:user', component: PaymentComponent },
+  { path: 'payment/:user/create', component: PaymentRegisterComponent },
+  { path: 'payment/:user/edit', component: PaymentEditComponent},
   { path: 'listAc/:user', component:ListAccomodationComponent},
   { path: 'listRs/:user', component:ListReservationComponent},
   { path: 'listRs/:user/historic', component: HistoricMainComponent},
